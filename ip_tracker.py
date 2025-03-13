@@ -1,12 +1,9 @@
 import requests
 
-
 ip_address = input("Masukkan IP Address: ")
-
 
 url = f"https://ipapi.co/{ip_address}/json/"
 response = requests.get(url)
-
 
 if response.status_code == 200:
     data = response.json()
